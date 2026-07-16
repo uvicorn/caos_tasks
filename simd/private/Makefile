@@ -1,4 +1,4 @@
-CC = gcc
+CC = gcc-15
 CFLAGS = -Wall -Wextra -O3 -mavx2 -march=native 
 
 all: bench_simd
