@@ -10,7 +10,7 @@ done
 
 wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py
 
-cat > file.txt <<'EOF'
+cat > ~/.gdbinit <<'EOF'
 source ~/.gdbinit-gef.py
 alias ir  = info registers
 alias afl =info functions
