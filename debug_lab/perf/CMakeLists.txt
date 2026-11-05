@@ -22,7 +22,7 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     add_link_options(-fsanitize=address)
 elseif (CMAKE_BUILD_TYPE STREQUAL "Release")
     message("Mode: Release")
-    add_compile_options(-Ofast -march=native -DNDEBUG -ggdb)
+    add_compile_options(-Ofast -march=native -DNDEBUG -ggdb -fno-omit-frame-pointer)
 endif()
 
 
